@@ -1,4 +1,4 @@
-# tensorflow-NER-C-API
+# 基于tensorflow-C++ API的命名实体识别
 编译tensorflow，提取需要的头文件
 1、tensorflow目录下./configure
 2、bazel build //tensorflow:libtensorflow_cc.so
