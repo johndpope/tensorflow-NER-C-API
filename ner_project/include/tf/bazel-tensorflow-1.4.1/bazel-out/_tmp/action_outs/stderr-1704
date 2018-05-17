@@ -1,0 +1,48 @@
+tensorflow/core/kernels/summary_interface.cc: In member function 'tensorflow::Status tensorflow::SummaryWriterImpl::Enqueue(tensorflow::int64, const tensorflow::Summary&)':
+tensorflow/core/kernels/summary_interface.cc:388:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (queue_.size() >= max_queue_ ||
+                       ^
+tensorflow/core/kernels/summary_interface.cc:389:51: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         Env::Default()->NowMicros() - last_flush_ > 1000 * flush_millis_) {
+                                                   ^
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:25,
+                 from ./tensorflow/core/framework/variant.h:29,
+                 from ./tensorflow/core/framework/allocator.h:26,
+                 from ./tensorflow/core/framework/op_kernel.h:23,
+                 from tensorflow/core/kernels/summary_interface.cc:17:
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetTensorDim(tensorflow::gtl::ArraySlice<T>, tensorflow::TensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:372:47:   required from here
+./tensorflow/core/util/tensor_format.h:340:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attributes.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:340:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attributes.size())
+   ^
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetFilterDim(tensorflow::gtl::ArraySlice<T>, tensorflow::FilterTensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:381:54:   required from here
+./tensorflow/core/util/tensor_format.h:355:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attribute.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:355:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attribute.size())
+   ^
+In file included from tensorflow/core/kernels/summary_interface.cc:19:0:
+bazel-out/k8-py3-opt/genfiles/tensorflow/core/framework/summary.pb.h: In member function 'virtual tensorflow::Status tensorflow::SummaryWriterImpl::WriteScalar(tensorflow::int64, tensorflow::Tensor, const string&)':
+bazel-out/k8-py3-opt/genfiles/tensorflow/core/framework/summary.pb.h:2518:31: warning: 'value' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   value_.simple_value_ = value;
+                               ^
+tensorflow/core/kernels/summary_interface.cc:265:11: note: 'value' was declared here
+     float value;
+           ^
+tensorflow/core/kernels/summary_interface.cc: In member function 'virtual tensorflow::Status tensorflow::SummaryWriterImpl::WriteHistogram(tensorflow::int64, tensorflow::Tensor, const string&)':
+tensorflow/core/kernels/summary_interface.cc:286:28: warning: 'double_val' may be used uninitialized in this function [-Wmaybe-uninitialized]
+       histo.Add(double_val);
+                            ^

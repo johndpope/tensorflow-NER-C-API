@@ -1,0 +1,13 @@
+tensorflow/core/kernels/sloppy_interleave_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::SloppyInterleaveDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/sloppy_interleave_dataset_op.cc:86:39: warning: 'block_length' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           output_shapes_(output_shapes) {
+                                       ^
+tensorflow/core/kernels/sloppy_interleave_dataset_op.cc:59:11: note: 'block_length' was declared here
+     int64 block_length;
+           ^
+tensorflow/core/kernels/sloppy_interleave_dataset_op.cc:86:39: warning: 'cycle_length' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           output_shapes_(output_shapes) {
+                                       ^
+tensorflow/core/kernels/sloppy_interleave_dataset_op.cc:53:11: note: 'cycle_length' was declared here
+     int64 cycle_length;
+           ^

@@ -1,0 +1,78 @@
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:25,
+                 from ./tensorflow/core/lib/core/errors.h:19,
+                 from ./tensorflow/core/framework/tensor_shape.h:23,
+                 from ./tensorflow/core/framework/partial_tensor_shape.h:20,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/function.h:21,
+                 from ./tensorflow/core/graph/graph.h:43,
+                 from ./tensorflow/core/kernels/remote_fused_graph_execute_utils.h:24,
+                 from tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:16:
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static bool tensorflow::RemoteFusedGraphExecuteUtils::GetOutputTensorShapeType(const tensorflow::GraphDef&, const string&, tensorflow::DataType*, tensorflow::TensorShape*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:432:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(data_types.size() > port);
+                           ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:432:3: note: in expansion of macro 'CHECK'
+   CHECK(data_types.size() > port);
+   ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::ClusterizeNodes(const std::unordered_set<std::basic_string<char> >&, const tensorflow::GraphDef&, std::vector<std::tuple<std::unordered_set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:790:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       CHECK(input_count == 0 || input_count == node->in_edges().size())
+                                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:790:7: note: in expansion of macro 'CHECK'
+       CHECK(input_count == 0 || input_count == node->in_edges().size())
+       ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::FuseCluster(const tensorflow::GraphDef&, const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const string&, const ClusterInfo&, const string&, bool, tensorflow::GraphDef*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:974:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j = 0; j < border_outputs.size(); ++j) {
+                         ^
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:25,
+                 from ./tensorflow/core/lib/core/errors.h:19,
+                 from ./tensorflow/core/framework/tensor_shape.h:23,
+                 from ./tensorflow/core/framework/partial_tensor_shape.h:20,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/function.h:21,
+                 from ./tensorflow/core/graph/graph.h:43,
+                 from ./tensorflow/core/kernels/remote_fused_graph_execute_utils.h:24,
+                 from tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:16:
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::CopyByteArrayToTensor(const void*, int, tensorflow::Tensor*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1339:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(tensor->TotalBytes() >= src_size)
+                              ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1339:3: note: in expansion of macro 'CHECK'
+   CHECK(tensor->TotalBytes() >= src_size)
+   ^
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetTensorDim(tensorflow::gtl::ArraySlice<T>, tensorflow::TensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:372:47:   required from here
+./tensorflow/core/util/tensor_format.h:340:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attributes.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:340:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attributes.size())
+   ^
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetFilterDim(tensorflow::gtl::ArraySlice<T>, tensorflow::FilterTensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:381:54:   required from here
+./tensorflow/core/util/tensor_format.h:355:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attribute.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:355:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attribute.size())
+   ^

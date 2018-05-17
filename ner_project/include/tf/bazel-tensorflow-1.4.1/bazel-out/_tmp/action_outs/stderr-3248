@@ -1,0 +1,68 @@
+tensorflow/cc/ops/while_loop.cc: In function 'std::vector<tensorflow::OutputTensor> tensorflow::ops::{anonymous}::ToOutputTensors(const std::vector<tensorflow::Output>&)':
+tensorflow/cc/ops/while_loop.cc:37:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < outputs.size(); ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc: In function 'std::vector<tensorflow::Node*> tensorflow::ops::{anonymous}::ToNodes(const std::vector<tensorflow::Output>&)':
+tensorflow/cc/ops/while_loop.cc:46:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < outputs.size(); ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc: In function 'tensorflow::Status tensorflow::ops::BuildWhileLoop(const tensorflow::Scope&, const std::vector<tensorflow::Output>&, const CondGraphBuilderFn&, const BodyGraphBuilderFn&, const string&, tensorflow::OutputList*, bool, tensorflow::Output*)':
+tensorflow/cc/ops/while_loop.cc:185:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < num_loop_vars; ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc:191:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < num_loop_vars; ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc:202:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < num_loop_vars; ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc:213:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < num_loop_vars; ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc:220:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < num_loop_vars; ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc:228:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < num_loop_vars; ++i) {
+                     ^
+tensorflow/cc/ops/while_loop.cc:242:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < num_loop_vars; ++i) {
+                       ^
+In file included from ./tensorflow/cc/ops/while_loop.h:19:0,
+                 from tensorflow/cc/ops/while_loop.cc:16:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/k8-py3-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:25,
+                 from ./tensorflow/core/framework/variant.h:29,
+                 from ./tensorflow/core/framework/allocator.h:26,
+                 from ./tensorflow/core/framework/tensor.h:20,
+                 from ./tensorflow/cc/framework/ops.h:21,
+                 from ./tensorflow/cc/ops/while_loop.h:19,
+                 from tensorflow/cc/ops/while_loop.cc:16:
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetTensorDim(tensorflow::gtl::ArraySlice<T>, tensorflow::TensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:372:47:   required from here
+./tensorflow/core/util/tensor_format.h:340:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attributes.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:340:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attributes.size())
+   ^
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetFilterDim(tensorflow::gtl::ArraySlice<T>, tensorflow::FilterTensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:381:54:   required from here
+./tensorflow/core/util/tensor_format.h:355:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attribute.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:355:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attribute.size())
+   ^

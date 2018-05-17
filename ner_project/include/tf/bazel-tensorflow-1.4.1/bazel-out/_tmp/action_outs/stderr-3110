@@ -1,0 +1,7 @@
+tensorflow/core/kernels/repeat_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::RepeatDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/repeat_dataset_op.cc:46:61: warning: 'count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : GraphDatasetBase(ctx), count_(count), input_(input) {
+                                                             ^
+tensorflow/core/kernels/repeat_dataset_op.cc:37:11: note: 'count' was declared here
+     int64 count;
+           ^

@@ -1,0 +1,6 @@
+tensorflow/core/ops/data_flow_ops.cc:349:8: warning: 'tensorflow::Status tensorflow::{anonymous}::ScalarAndTwoElementVectorInputsAndScalarOutputs(tensorflow::shape_inference::InferenceContext*)' defined but not used [-Wunused-function]
+ Status ScalarAndTwoElementVectorInputsAndScalarOutputs(InferenceContext* c) {
+        ^
+tensorflow/core/ops/data_flow_ops.cc:368:8: warning: 'tensorflow::Status tensorflow::{anonymous}::ScalarOutput(tensorflow::shape_inference::InferenceContext*)' defined but not used [-Wunused-function]
+ Status ScalarOutput(InferenceContext* c) {
+        ^

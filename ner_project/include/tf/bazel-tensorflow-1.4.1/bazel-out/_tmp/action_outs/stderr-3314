@@ -1,0 +1,6 @@
+In file included from tensorflow/core/kernels/neon/neon_depthwise_conv_op.cc:30:0:
+./tensorflow/core/kernels/neon/depthwiseconv_float.h: In instantiation of 'void tensorflow::neon::DepthwiseConv(const float*, const tensorflow::neon::Dims<4>&, const float*, const tensorflow::neon::Dims<4>&, const float*, const tensorflow::neon::Dims<4>&, int, int, int, int, float*, const tensorflow::neon::Dims<4>&) [with tensorflow::neon::FusedActivationFunctionType Ac = (tensorflow::neon::FusedActivationFunctionType)0]':
+tensorflow/core/kernels/neon/neon_depthwise_conv_op.cc:138:42:   required from here
+./tensorflow/core/kernels/neon/depthwiseconv_float.h:602:7: warning: variable 'fixed_input_depth' set but not used [-Wunused-but-set-variable]
+   int fixed_input_depth = 0;
+       ^

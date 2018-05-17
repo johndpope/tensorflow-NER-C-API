@@ -1,0 +1,32 @@
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:25,
+                 from ./tensorflow/core/framework/variant.h:29,
+                 from ./tensorflow/core/framework/allocator.h:26,
+                 from ./tensorflow/core/framework/tensor.h:20,
+                 from ./tensorflow/cc/framework/ops.h:21,
+                 from ./tensorflow/cc/framework/scope.h:25,
+                 from ./tensorflow/cc/framework/scope_internal.h:19,
+                 from tensorflow/cc/framework/scope.cc:19:
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetTensorDim(tensorflow::gtl::ArraySlice<T>, tensorflow::TensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:372:47:   required from here
+./tensorflow/core/util/tensor_format.h:340:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attributes.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:340:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attributes.size())
+   ^
+./tensorflow/core/util/tensor_format.h: In instantiation of 'T tensorflow::GetFilterDim(tensorflow::gtl::ArraySlice<T>, tensorflow::FilterTensorFormat, char) [with T = long long int]':
+./tensorflow/core/util/tensor_format.h:381:54:   required from here
+./tensorflow/core/util/tensor_format.h:355:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(index >= 0 && index < dimension_attribute.size())
+                             ^
+./tensorflow/core/platform/macros.h:78:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+./tensorflow/core/util/tensor_format.h:355:3: note: in expansion of macro 'CHECK'
+   CHECK(index >= 0 && index < dimension_attribute.size())
+   ^

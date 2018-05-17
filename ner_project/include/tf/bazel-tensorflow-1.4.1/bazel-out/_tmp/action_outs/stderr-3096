@@ -1,0 +1,19 @@
+In file included from ./tensorflow/core/framework/tensor_shape.h:23:0,
+                 from ./tensorflow/core/framework/partial_tensor_shape.h:20,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:20,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:22,
+                 from tensorflow/core/kernels/reader_dataset_ops.cc:15:
+./tensorflow/core/lib/core/errors.h: In member function 'virtual tensorflow::Status tensorflow::{anonymous}::FixedLengthRecordDatasetOp::Dataset::Iterator::RestoreInternal(tensorflow::OpKernelContext*, tensorflow::IteratorBase::IteratorBundleReader*)':
+./tensorflow/core/lib/core/errors.h:42:54: warning: 'current_pos' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     const ::tensorflow::Status _status = (__VA_ARGS__);  \
+                                                      ^
+tensorflow/core/kernels/reader_dataset_ops.cc:381:15: note: 'current_pos' was declared here
+         int64 current_pos;
+               ^
+tensorflow/core/kernels/reader_dataset_ops.cc:380:57: warning: 'current_file_index' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         current_file_index_ = size_t(current_file_index);
+                                                         ^

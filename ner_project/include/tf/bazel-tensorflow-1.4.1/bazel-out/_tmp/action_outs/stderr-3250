@@ -1,0 +1,11 @@
+tensorflow/cc/framework/while_gradients.cc: In function 'std::vector<tensorflow::Output> tensorflow::{anonymous}::ToOutputVector(const std::vector<tensorflow::OutputTensor>&)':
+tensorflow/cc/framework/while_gradients.cc:40:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < n; ++i) result.push_back(ToOutput(output_tensors[i]));
+                     ^
+In file included from ./tensorflow/cc/framework/while_gradients.h:19:0,
+                 from tensorflow/cc/framework/while_gradients.cc:16:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/k8-py3-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^

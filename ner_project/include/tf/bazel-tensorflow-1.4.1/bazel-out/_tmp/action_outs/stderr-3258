@@ -1,0 +1,7 @@
+In file included from bazel-out/k8-py3-opt/genfiles/tensorflow/cc/ops/array_ops_internal.h:8:0,
+                 from tensorflow/cc/gradients/array_grad.cc:18:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/k8-py3-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^

@@ -1,0 +1,7 @@
+tensorflow/core/kernels/parallel_map_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::ParallelMapDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/parallel_map_dataset_op.cc:81:50: warning: 'num_parallel_calls' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           captured_func_(std::move(captured_func)) {
+                                                  ^
+tensorflow/core/kernels/parallel_map_dataset_op.cc:54:11: note: 'num_parallel_calls' was declared here
+     int32 num_parallel_calls;
+           ^

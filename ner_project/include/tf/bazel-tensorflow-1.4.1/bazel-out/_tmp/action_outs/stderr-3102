@@ -1,0 +1,7 @@
+tensorflow/core/kernels/take_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::TakeDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/take_dataset_op.cc:45:38: warning: 'count' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : count_(count), input_(input) {
+                                      ^
+tensorflow/core/kernels/take_dataset_op.cc:36:11: note: 'count' was declared here
+     int64 count;
+           ^

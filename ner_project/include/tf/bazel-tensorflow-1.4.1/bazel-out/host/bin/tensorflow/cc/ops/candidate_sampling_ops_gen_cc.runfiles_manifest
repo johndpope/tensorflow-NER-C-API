@@ -1,0 +1,3 @@
+org_tensorflow/_solib_k8/_U_S_Stensorflow_Scc_Cops_Scandidate_Usampling_Uops_Ugen_Ucc___Utensorflow/libtensorflow_framework.so /home/xmin/.cache/bazel/_bazel_xmin/4ce6a0176952b56fc38d2d682010442f/execroot/org_tensorflow/bazel-out/host/bin/_solib_k8/_U_S_Stensorflow_Scc_Cops_Scandidate_Usampling_Uops_Ugen_Ucc___Utensorflow/libtensorflow_framework.so
+org_tensorflow/tensorflow/cc/ops/candidate_sampling_ops_gen_cc /home/xmin/.cache/bazel/_bazel_xmin/4ce6a0176952b56fc38d2d682010442f/execroot/org_tensorflow/bazel-out/host/bin/tensorflow/cc/ops/candidate_sampling_ops_gen_cc
+org_tensorflow/tensorflow/libtensorflow_framework.so /home/xmin/.cache/bazel/_bazel_xmin/4ce6a0176952b56fc38d2d682010442f/execroot/org_tensorflow/bazel-out/host/bin/tensorflow/libtensorflow_framework.so

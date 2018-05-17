@@ -1,0 +1,13 @@
+tensorflow/core/kernels/shuffle_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::ShuffleDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/shuffle_dataset_op.cc:57:5: warning: 'seed' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (seed == 0 && seed2 == 0) {
+     ^
+tensorflow/core/kernels/shuffle_dataset_op.cc:57:19: warning: 'seed2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (seed == 0 && seed2 == 0) {
+                   ^
+tensorflow/core/kernels/shuffle_dataset_op.cc:74:50: warning: 'buffer_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : input_(input), buffer_size_(buffer_size) {
+                                                  ^
+tensorflow/core/kernels/shuffle_dataset_op.cc:42:11: note: 'buffer_size' was declared here
+     int64 buffer_size;
+           ^

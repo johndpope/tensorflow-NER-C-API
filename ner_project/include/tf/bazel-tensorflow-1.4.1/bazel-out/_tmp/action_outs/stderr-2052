@@ -1,0 +1,16 @@
+tensorflow/core/grappler/optimizers/arithmetic_optimizer.cc:329:3: warning: multi-line comment [-Wcomment]
+   //        /      \
+   ^
+tensorflow/core/grappler/optimizers/arithmetic_optimizer.cc:333:3: warning: multi-line comment [-Wcomment]
+   //     /   \
+   ^
+tensorflow/core/grappler/optimizers/arithmetic_optimizer.cc:339:3: warning: multi-line comment [-Wcomment]
+   //        /      \
+   ^
+tensorflow/core/grappler/optimizers/arithmetic_optimizer.cc:341:3: warning: multi-line comment [-Wcomment]
+   //       |       /   \
+   ^
+tensorflow/core/grappler/optimizers/arithmetic_optimizer.cc: In function 'bool tensorflow::grappler::AreInversePermutations(tensorflow::gtl::ArraySlice<int>, tensorflow::gtl::ArraySlice<int>)':
+tensorflow/core/grappler/optimizers/arithmetic_optimizer.cc:224:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < a.size(); ++i) {
+                     ^

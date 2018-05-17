@@ -1,0 +1,6 @@
+tensorflow/core/common_runtime/gpu/process_state.cc:53:6: warning: 'bool tensorflow::{anonymous}::useCudaMallocAllocator()' defined but not used [-Wunused-function]
+ bool useCudaMallocAllocator() {
+      ^
+tensorflow/core/common_runtime/gpu/process_state.cc:62:6: warning: 'bool tensorflow::{anonymous}::useCudaMemoryGuardAllocator()' defined but not used [-Wunused-function]
+ bool useCudaMemoryGuardAllocator() {
+      ^

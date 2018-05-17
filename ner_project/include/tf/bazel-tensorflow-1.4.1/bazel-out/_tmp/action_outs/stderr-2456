@@ -1,0 +1,3 @@
+tensorflow/core/framework/op_kernel.cc:956:8: warning: 'tensorflow::Status tensorflow::{anonymous}::FindKernelRegistration(const tensorflow::DeviceType&, const tensorflow::Node&, const tensorflow::KernelRegistration**, bool*)' defined but not used [-Wunused-function]
+ Status FindKernelRegistration(const DeviceType& device_type, const Node& node,
+        ^

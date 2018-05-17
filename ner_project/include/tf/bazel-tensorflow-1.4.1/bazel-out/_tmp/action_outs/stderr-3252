@@ -1,0 +1,18 @@
+tensorflow/cc/framework/gradients.cc: In member function 'tensorflow::Status tensorflow::{anonymous}::SymbolicGradientBuilder::ProcessWhileLoop(tensorflow::Node*, const tensorflow::Output&)':
+tensorflow/cc/framework/gradients.cc:427:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < dx.size(); ++i) {
+                     ^
+tensorflow/cc/framework/gradients.cc: In member function 'tensorflow::Status tensorflow::{anonymous}::SymbolicGradientBuilder::AddGradients()':
+tensorflow/cc/framework/gradients.cc:492:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (IsPrimitiveOpWithNoGrad(n->type_string()) || num_no_grad == num_y) {
+                                                                  ^
+tensorflow/cc/framework/gradients.cc:503:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (num_no_grad > 0 && num_no_grad < num_y) {
+                                        ^
+In file included from ./tensorflow/cc/framework/grad_op_registry.h:21:0,
+                 from tensorflow/cc/framework/gradients.cc:19:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/k8-py3-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^

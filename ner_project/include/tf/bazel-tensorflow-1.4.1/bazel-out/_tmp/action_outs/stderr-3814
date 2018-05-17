@@ -1,0 +1,5 @@
+tensorflow/c/c_api.cc: In function 'tensorflow::Status tensorflow::TF_TensorToTensor(const TF_Tensor*, tensorflow::Tensor*)':
+tensorflow/c/c_api.cc:498:31: warning: 'len' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     dstarray(i).assign(p, len);
+                               ^
+tensorflow/c/c_api.cc:498:31: warning: 'p' may be used uninitialized in this function [-Wmaybe-uninitialized]

@@ -1,0 +1,7 @@
+tensorflow/core/kernels/dense_to_sparse_batch_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::DenseToSparseBatchDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/dense_to_sparse_batch_dataset_op.cc:85:71: warning: 'batch_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : batch_size_(batch_size), row_shape_(row_shape), input_(input) {
+                                                                       ^
+tensorflow/core/kernels/dense_to_sparse_batch_dataset_op.cc:41:11: note: 'batch_size' was declared here
+     int64 batch_size;
+           ^

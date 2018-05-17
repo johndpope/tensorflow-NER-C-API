@@ -1,0 +1,19 @@
+tensorflow/core/grappler/costs/virtual_scheduler.cc: In member function 'tensorflow::Status tensorflow::grappler::VirtualScheduler::Init()':
+tensorflow/core/grappler/costs/virtual_scheduler.cc:230:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+            port_num < curr_node_state.output_properties.size(); ++port_num) {
+                     ^
+tensorflow/core/grappler/costs/virtual_scheduler.cc: In member function 'tensorflow::int64 tensorflow::grappler::VirtualScheduler::CalculateOutputSize(const std::vector<tensorflow::OpInfo_TensorProperties>&, int) const':
+tensorflow/core/grappler/costs/virtual_scheduler.cc:461:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (port_num >= output_properties.size()) {
+                ^
+tensorflow/core/grappler/costs/virtual_scheduler.cc: In member function 'bool tensorflow::grappler::VirtualScheduler::MarkCurrNodeExecuted(const tensorflow::grappler::Costs&)':
+tensorflow/core/grappler/costs/virtual_scheduler.cc:561:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (output_state.num_inputs_ready == output_state.inputs.size() ||
+                                         ^
+tensorflow/core/grappler/costs/virtual_scheduler.cc:576:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (input_state.num_outputs_executed[port] ==
+                                                ^
+tensorflow/core/grappler/costs/virtual_scheduler.cc: In member function 'tensorflow::grappler::Costs tensorflow::grappler::VirtualScheduler::Summary(tensorflow::RunMetadata*)':
+tensorflow/core/grappler/costs/virtual_scheduler.cc:712:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int slot = 0; slot < nodestate.output_properties.size(); slot++) {
+                                 ^

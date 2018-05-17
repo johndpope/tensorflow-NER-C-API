@@ -1,0 +1,4 @@
+tensorflow/core/grappler/optimizers/layout_optimizer.cc: In member function 'tensorflow::Status tensorflow::grappler::DataLayoutOptimizer::Expand()':
+tensorflow/core/grappler/optimizers/layout_optimizer.cc:1276:16: warning: variable 'n' set but not used [-Wunused-but-set-variable]
+       NodeDef* n = AddNodePermNHWCToNCHW();
+                ^

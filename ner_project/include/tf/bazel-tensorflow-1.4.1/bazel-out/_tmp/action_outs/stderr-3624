@@ -1,0 +1,56 @@
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = long long int; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     output_shape.InsertDim(0, num_indices);
+                                          ^
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = int; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = short unsigned int; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = short int; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = unsigned char; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = signed char; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = Eigen::half; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = float; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = double; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = std::complex<float>; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = std::complex<double>; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = bool; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = std::basic_string<char>; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = Eigen::QUInt8; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = Eigen::QInt8; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = Eigen::QInt32; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayPackOrGatherOp<Device, T, LEGACY_PACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = tensorflow::bfloat16; bool LEGACY_PACK = true]':
+tensorflow/core/kernels/tensor_array_ops.cc:630:42: warning: 'num_indices' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = int; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (dynamic_size && array_size < max_index + 1) {
+     ^
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = short unsigned int; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = short int; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = unsigned char; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = Eigen::half; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = float; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = double; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = std::complex<double>; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+tensorflow/core/kernels/tensor_array_ops.cc: In member function 'void tensorflow::TensorArrayUnpackOrScatterOp<Device, T, LEGACY_UNPACK>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = tensorflow::ResourceHandle; bool LEGACY_UNPACK = false]':
+tensorflow/core/kernels/tensor_array_ops.cc:1059:5: warning: 'array_size' may be used uninitialized in this function [-Wmaybe-uninitialized]

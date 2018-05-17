@@ -1,0 +1,7 @@
+tensorflow/core/kernels/prefetch_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::PrefetchDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/prefetch_dataset_op.cc:64:44: warning: 'buffer_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           ctx_params_(std::move(ctx_params)) {
+                                            ^
+tensorflow/core/kernels/prefetch_dataset_op.cc:36:11: note: 'buffer_size' was declared here
+     int64 buffer_size;
+           ^

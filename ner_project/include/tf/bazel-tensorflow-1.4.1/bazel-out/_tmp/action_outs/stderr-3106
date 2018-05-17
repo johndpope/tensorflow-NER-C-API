@@ -1,0 +1,7 @@
+tensorflow/core/kernels/padded_batch_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::PaddedBatchDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/padded_batch_dataset_op.cc:196:23: warning: 'batch_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           input_(input) {
+                       ^
+tensorflow/core/kernels/padded_batch_dataset_op.cc:131:11: note: 'batch_size' was declared here
+     int64 batch_size;
+           ^

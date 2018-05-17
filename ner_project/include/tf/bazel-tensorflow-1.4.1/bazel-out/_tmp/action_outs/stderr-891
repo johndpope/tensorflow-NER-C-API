@@ -1,0 +1,19 @@
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+external/snappy/snappy.cc: In member function 'void snappy::SnappySinkAllocator::Flush(size_t)':
+external/snappy/snappy.cc:1403:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < blocks_.size(); ++i) {
+                       ^
+In file included from external/snappy/snappy-internal.h:34:0,
+                 from external/snappy/snappy.cc:30:
+external/snappy/snappy.cc: In instantiation of 'bool snappy::SnappyScatteredWriter<Allocator>::AppendFromSelf(size_t, size_t) [with Allocator = snappy::SnappySinkAllocator; size_t = long unsigned int]':
+external/snappy/snappy.cc:715:13:   required from 'void snappy::SnappyDecompressor::DecompressAllTags(Writer*) [with Writer = snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>]'
+external/snappy/snappy.cc:799:3:   required from 'bool snappy::InternalUncompressAllTags(snappy::SnappyDecompressor*, Writer*, snappy::uint32) [with Writer = snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>; snappy::uint32 = unsigned int]'
+external/snappy/snappy.cc:1460:78:   required from here
+external/snappy/snappy.cc:1316:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (PREDICT_TRUE(offset - 1u < op_ptr_ - op_base_ && op_end <= op_limit_)) {
+                                  ^
+external/snappy/snappy-stubs-internal.h:80:25: note: in definition of macro 'PREDICT_TRUE'
+ #define PREDICT_TRUE(x) x
+                         ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"

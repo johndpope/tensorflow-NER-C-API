@@ -1,0 +1,19 @@
+tensorflow/core/kernels/range_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::RangeDatasetOp::MakeDataset(tensorflow::OpKernelContext*, tensorflow::DatasetBase**)':
+tensorflow/core/kernels/range_dataset_op.cc:50:72: warning: 'stop' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : GraphDatasetBase(ctx), start_(start), stop_(stop), step_(step) {}
+                                                                        ^
+tensorflow/core/kernels/range_dataset_op.cc:35:11: note: 'stop' was declared here
+     int64 stop;
+           ^
+tensorflow/core/kernels/range_dataset_op.cc:50:72: warning: 'start' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : GraphDatasetBase(ctx), start_(start), stop_(stop), step_(step) {}
+                                                                        ^
+tensorflow/core/kernels/range_dataset_op.cc:32:11: note: 'start' was declared here
+     int64 start;
+           ^
+tensorflow/core/kernels/range_dataset_op.cc:50:72: warning: 'step' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         : GraphDatasetBase(ctx), start_(start), stop_(stop), step_(step) {}
+                                                                        ^
+tensorflow/core/kernels/range_dataset_op.cc:38:11: note: 'step' was declared here
+     int64 step;
+           ^
