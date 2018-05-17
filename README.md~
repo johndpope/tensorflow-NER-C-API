@@ -9,6 +9,7 @@
 3、复制bazel-genfiles/ tensorflow third_party bazel-bin/tensorflow/libtensorflow_cc.so bazel-bin/tensorflow/libtensorflow_framework.so bazel-tensorflow-1.4.1到ner_project目录下
 
 #用python训练好模型，并固化好图
+
 1、在python_model_preprocess训练完模型后，运行pickle2json.py
 
 2、将model文件夹和ckpt文件夹复制到ner_project目录下
